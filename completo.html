@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Cabecera, Menú Lateral y Pie de Página</title>
+    <!-- Vincular Bootstrap desde el CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        /* Estilos personalizados para la barra lateral */
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+
+        /* Estilo para la cabecera */
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Estilo para el pie de página */
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Asegurarse de que el contenido no se solape con la barra lateral */
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        /* Evitar que el contenido se solape con el pie */
+        body {
+            padding-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <div class="header">
+        <h1>Mi Página Web</h1>
+        <p>Una página simple con Bootstrap, Menú Lateral y Pie de Página</p>
+    </div>
+
+    <!-- Barra lateral -->
+    <div class="sidenav">
+        <h2 class="text-white text-center">Menú</h2>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="content">
+        <div class="container">
+            <h2>Bienvenido a la página</h2>
+            <p>Esta es una página simple con un menú lateral, cabecera y pie de página.</p>
+            <p>Puedes agregar más contenido aquí según lo necesites.</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>&copy; 2024 Mi Empresa. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Vincular los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
